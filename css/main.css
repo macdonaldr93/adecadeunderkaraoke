@@ -190,6 +190,10 @@ button:focus-visible {
   flex-grow: 1;
 }
 
+.links-list__link-icon {
+  margin-left: 6px;
+}
+
 .socials {
   margin-top: 48px;
   margin-bottom: 16px;
