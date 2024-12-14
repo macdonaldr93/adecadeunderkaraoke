@@ -1,6 +1,4 @@
 (() => {
-  const supportsPassive = testPassiveSupport();
-
   const Selectors = {
     ListItemPressables: '.links-list__item > a, .links-list__item > button',
   };
@@ -8,9 +6,7 @@
   document.querySelectorAll(Selectors.ListItemPressables).forEach(el => {
     el.addEventListener('mouseenter', randomizeLinksListItemBoxShadow);
     el.addEventListener('mouseleave', resetLinksListItemBoxShadow);
-    el.addEventListener(
-      'touchstart',
-      randomizeLinksListItemBoxShadow);
+    el.addEventListener('touchstart', randomizeLinksListItemBoxShadow);
     el.addEventListener('touchend', resetLinksListItemBoxShadow);
   });
 
@@ -28,23 +24,5 @@
 
   function resetLinksListItemBoxShadow(event) {
     event.target.style.boxShadow = `var(--c-overlay) 8px 8px 0px 0px`;
-  }
-
-  // Polyfills
-
-  function testPassiveSupport() {
-    let supportsPassive = false;
-
-    try {
-      var opts = Object.defineProperty({}, 'passive', {
-        get: function () {
-          supportsPassive = true;
-        },
-      });
-      window.addEventListener('testPassive', null, opts);
-      window.removeEventListener('testPassive', null, opts);
-    } catch (e) {}
-
-    return supportsPassive;
   }
 })();

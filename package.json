@@ -6,7 +6,7 @@
     "build:css:vendor": "postcss css/normalize.css -o css/normalize.min.css",
     "build:js:main": "minify js/main.js > js/main.min.js",
     "build:js:vendor": "minify js/vendor.js > js/vendor.min.js",
-    "build": "npm run build:css:main & npm run build:css:vendor & npm run build:js:main & npm run build:js:vendor"
+    "build": "npm run build:css:main && npm run build:css:vendor && npm run build:js:main && npm run build:js:vendor"
   },
   "author": "Ryan Macdonald",
   "license": "MIT",
