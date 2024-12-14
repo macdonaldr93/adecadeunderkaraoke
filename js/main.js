@@ -19,10 +19,10 @@
       Math.random() * 256,
     )}, ${Math.floor(Math.random() * 256)})`;
 
-    event.target.style.boxShadow = `${randomColor} 10px 10px 0px 0px`;
+    event.currentTarget.style.boxShadow = `${randomColor} 10px 10px 0px 0px`;
   }
 
   function resetLinksListItemBoxShadow(event) {
-    event.target.style.boxShadow = '';
+    event.currentTarget.style.boxShadow = '';
   }
 })();

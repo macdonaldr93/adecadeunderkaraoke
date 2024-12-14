@@ -148,7 +148,7 @@ button:focus-visible {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   border-radius: 8px;
   border: 2px solid var(--c-overlay);
   box-shadow: var(--c-overlay) 8px 8px 0px 0px;
@@ -164,7 +164,7 @@ button:focus-visible {
   justify-content: center;
   overflow: hidden;
   padding: 12px 16px;
-  text-align: center;
+  position: relative;
   text-decoration: none;
   text-transform: uppercase;
   transition: -webkit-transform 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
