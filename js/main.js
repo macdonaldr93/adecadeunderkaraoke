@@ -10,13 +10,7 @@
     el.addEventListener('mouseleave', resetLinksListItemBoxShadow);
     el.addEventListener(
       'touchstart',
-      randomizeLinksListItemBoxShadow,
-      supportsPassive
-        ? {
-            passive: true,
-          }
-        : false,
-    );
+      randomizeLinksListItemBoxShadow);
     el.addEventListener('touchend', resetLinksListItemBoxShadow);
   });
 
