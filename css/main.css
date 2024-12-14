@@ -211,6 +211,18 @@ button:focus-visible {
   margin: 0;
 }
 
+.socials-list__item a {
+  display: flex;
+}
+
+.socials-list__item a:focus-visible {
+  border-radius: 8px;
+}
+
+.socials-list__item a:hover {
+  border-bottom: 2px solid var(--c-overlay);
+}
+
 /* Modal */
 
 .modal__overlay {
