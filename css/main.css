@@ -36,6 +36,8 @@ button {
 }
 
 body::before {
+  background-image: -webkit-image-set(url('/img/doodles.webp') type("image/webp"),
+      url('/img/doodles.png') type("image/png"));
   background-image: image-set(url('/img/doodles.webp') type("image/webp"),
       url('/img/doodles.png') type("image/png"));
   background-repeat: repeat;
@@ -150,7 +152,7 @@ button:focus-visible {
   border-radius: 8px;
   border: 2px solid var(--c-overlay);
   box-shadow: var(--c-overlay) 8px 8px 0px 0px;
-  color: var(--c-text);
+  color: inherit;
   cursor: pointer;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -197,7 +199,7 @@ button:focus-visible {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  gap: 16px;
+  gap: 8px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -212,16 +214,35 @@ button:focus-visible {
 }
 
 .socials-list__item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  padding: 8px;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
 }
 
 .socials-list__item a:focus-visible {
   border-radius: 8px;
 }
 
-.socials-list__item a:hover {
-  border-bottom: 2px solid var(--c-overlay);
+.socials-list__item a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--c-overlay);
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
 }
+
+.socials-list__item a:hover::after {
+  width: 100%;
+}
+
 
 /* Modal */
 
@@ -245,6 +266,8 @@ button:focus-visible {
 
 @media (max-width: 600px) {
   .modal__overlay {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
   }
 }
