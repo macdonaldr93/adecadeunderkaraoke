@@ -36,7 +36,10 @@ button {
 }
 
 body::before {
-  background: url('/img/doodles.jpg') repeat top left;
+  background-image: image-set(url('/img/doodles.webp') type("image/webp"),
+      url('/img/doodles.png') type("image/png"));
+  background-repeat: repeat;
+  background-position: top left;
   background-attachment: fixed;
   background-size: cover;
   content: '';
