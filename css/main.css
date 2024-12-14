@@ -183,8 +183,8 @@ button:focus-visible {
 
 .links-list__item>a:hover,
 .links-list__item>button:hover {
-  -webkit-transform: rotate(1deg);
-  transform: rotate(1deg);
+  -webkit-transform: rotate(1deg) translateZ(0);
+  transform: rotate(1deg) translateZ(0);
 }
 
 .links-list__link-text {
