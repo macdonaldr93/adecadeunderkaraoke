@@ -14,8 +14,19 @@
   // Modals
   MicroModal.init();
 
-  // Drawable
-  const canvas = document.getElementById('Drawable');
+  // Doodle
+  let doodleEnabled = false;
+  const doodleBtn = document.getElementById('DoodleToggle');
+  doodleBtn.addEventListener('click', event => {
+    event.preventDefault();
+    doodleEnabled = !doodleEnabled;
+    if (doodleEnabled) {
+      doodleBtn.innerText = 'Turn off doodle mode';
+    } else {
+      doodleBtn.innerText = 'Turn on doodle mode';
+    }
+  });
+  const canvas = document.getElementById('Doodle');
   const ctx = canvas.getContext('2d');
 
   function resizeCanvas() {
@@ -42,6 +53,9 @@
   }
 
   function startDrawing(event) {
+    if (!doodleEnabled) {
+      return;
+    }
     drawing = true;
     const { x, y } = getPosition(event);
     ctx.beginPath();
@@ -50,7 +64,7 @@
 
   // Draw
   function draw(event) {
-    if (!drawing) {
+    if (!drawing || !doodleEnabled) {
       return;
     }
 
@@ -65,6 +79,9 @@
   }
 
   function stopDrawing() {
+    if (!doodleEnabled) {
+      return;
+    }
     drawing = false;
     ctx.closePath();
   }
