@@ -23,6 +23,6 @@
   }
 
   function resetLinksListItemBoxShadow(event) {
-    event.target.style.boxShadow = `var(--c-overlay) 8px 8px 0px 0px`;
+    event.target.style.boxShadow = '';
   }
 })();
