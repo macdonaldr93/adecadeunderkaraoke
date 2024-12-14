@@ -243,15 +243,31 @@ button:focus-visible {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .modal__overlay {
+    align-items: flex-end;
+  }
+}
+
 .modal__container {
   background-color: #ffffff;
   padding: 32px;
   max-width: var(--content-width);
+  width: var(--content-width);
   max-height: 100vh;
   border-radius: 8px;
   overflow-y: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  .modal__container {
+    border-radius: 0;
+    padding: 24px;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .modal__header {
