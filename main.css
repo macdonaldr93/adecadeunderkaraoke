@@ -1,0 +1,147 @@
+body {
+  background: #000000 url('img/background.jpeg') repeat top left;
+  cursor: url('img/cursor.png'), auto;
+}
+
+button:hover,
+a:hover {
+  cursor: url('img/cursor-pointer.png'), pointer;
+}
+
+body::-webkit-scrollbar {
+  background-color: #d9d9d9;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #d9d9d9;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border: 1px solid #000000;
+  /* the actual draggable element, the star of the show! */
+}
+
+.button--unstyled {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  outline: inherit;
+  padding: 0;
+  text-align: left;
+}
+
+.container {
+  margin: 2rem auto;
+  width: 760px;
+}
+
+.nav {
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.nav-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+.header {
+  align-items: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.header-logo {
+  margin: 0;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.columns--two {
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.box--double-bordered {
+  border: 4px solid purple;
+  padding: 4px;
+}
+
+.box--bordered {
+  border: 4px solid purple;
+}
+
+.card {
+  background-color: #FFFFFF;
+  padding: 1rem;
+}
+
+.song-list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.media-card {
+  display: flex;
+  gap: 1rem;
+}
+
+.song-list__item+.song-list__item {
+  margin-top: 0.5rem;
+}
+
+.media-card__media {
+  max-width: 50px;
+}
+
+.media-card__content {
+  flex: 1;
+}
+
+.song__title {
+  margin: 0;
+}
+
+.song__artist {
+  margin: 0;
+}
+
+.form-group+.form-group {
+  margin-top: 0.5rem
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.blink {
+  animation: 1s linear infinite blink-effect;
+}
+
+@keyframes blink-effect {
+  0% {
+    visibility: hidden;
+  }
+
+  50% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: visible;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="author" content="Your elders of emo">
+  <title>Elder Emo - Live Karaoke Emo Band</title>
+
+  <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" href="img/favicon.ico">
+  <meta name="theme-color" content="#000000">
+
+  <link href="normalize.css" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <main class="container">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-list__item"><a href="#shows">Shows</a></li>
+        <li class="nav-list__item"><a href="#songs">Songs</a></li>
+        <li class="nav-list__item"><a href="#requests">Requests</a></li>
+      </ul>
+    </nav>
+    <section>
+      <header class="header">
+        <button class="button--unstyled" id="PlayFatLip">
+          <h1 class="header-logo">Elder Emo</h1>
+          <span id="PlayFatLipContent">(click me)</span>
+        </button>
+        <h2 class="blink">Playing soon!!</h2>
+      </header>
+      <div class="card" id="requests" style="margin: 1rem auto;">
+        <h2>Contacting Elder Emo</h2>
+        <ul>
+          <li><a href="mailto:mcmahonj87@gmail.com">✉️ Send message</a></li>
+          <li><a href="#" data-bookmark>⭐️ Add to favorites</a></li>
+        </ul>
+      </div>
+      <div class="columns columns--two">
+        <div class="box--double-bordered" id="songs">
+          <div class="box--bordered card">
+            <h2>Songs</h2>
+            <ul class="song-list">
+              <li class="song-list__item">
+                <div class="media-card">
+                  <div class="media-card__media">
+                    <img src="img/songs/fat-lip.jpeg" />
+                  </div>
+                  <div class="media-card__content">
+                    <h3 class="song__title">Fat Lip</h3>
+                    <p class="song__artist">Sum 41</p>
+                  </div>
+                </div>
+              </li>
+              <li class="song-list__item">
+                <div class="media-card">
+                  <div class="media-card__media">
+                    <img src="img/songs/ocean-avenue.jpeg" />
+                  </div>
+                  <div class="media-card__content">
+                    <h3 class="song__title">Ocean Avenue</h3>
+                    <p class="song__artist">Yellowcard</p>
+                  </div>
+                </div>
+              </li>
+              <li class="song-list__item">
+                <div class="media-card">
+                  <div class="media-card__media">
+                    <img src="img/songs/a-little-less-sixteen-candles.jpeg" />
+                  </div>
+                  <div class="media-card__content">
+                    <h3 class="song__title">A Little Less Sixteen Candles</h3>
+                    <p class="song__artist">Fall Out Boy</p>
+                  </div>
+                </div>
+              </li>
+              <li class="song-list__item">
+                <div class="media-card">
+                  <div class="media-card__media">
+                    <img src="img/songs/basket-case.jpeg" />
+                  </div>
+                  <div class="media-card__content">
+                    <h3 class="song__title">Basket Case</h3>
+                    <p class="song__artist">Green Day</p>
+                  </div>
+                </div>
+              </li>
+              <li class="song-list__item">
+                <div class="media-card">
+                  <div class="media-card__media">
+                    <img src="img/songs/basket-case.jpeg" />
+                  </div>
+                  <div class="media-card__content">
+                    <h3 class="song__title">The Middle</h3>
+                    <p class="song__artist">Jimmy Eat World</p>
+                  </div>
+                </div>
+              </li>
+              <li class="song-list__item">
+                <div class="media-card">
+                  <div class="media-card__media">
+                    <img src="img/songs/jamie-all-over.jpeg" />
+                  </div>
+                  <div class="media-card__content">
+                    <h3 class="song__title">Jamie All Over</h3>
+                    <p class="song__artist">Mayday Parade</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="box--double-bordered" id="shows">
+          <div class="box--bordered card">
+            <h2>Upcoming shows</h2>
+            <ul class="song-list">
+              <li class="song-list__item">
+                <div class="media-card">
+                  <div class="media-card__media">
+                    <img src="img/songs/fat-lip.jpeg" />
+                  </div>
+                  <div class="media-card__content">
+                    <h3 class="song__title">10PM - September 23, 2023</h3>
+                    <p class="song__artist">Sneaky Dee's</p>
+                    <p class="song__artist">Toronto, Canada</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="card" id="requests">
+        <h2>Song Requests</h2>
+        <form id="SongRequestForm">
+          <div class="form-group">
+            <label for="song_title">Song title</label>
+            <input type="text" id="song_title" name="song_title" />
+          </div>
+          <div class="form-group">
+            <label for="artist">Artist</label>
+            <input type="text" id="artist" name="artist" />
+          </div>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" />
+          </div>
+          <div class="form-group">
+            <button class="button" type="submit">Request this song</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
