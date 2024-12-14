@@ -3,21 +3,34 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="">
-  <meta name="author" content="Your elders of emo">
-  <title>Elder Emo - Live Karaoke Emo Band</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <!-- SEO -->
+  <title>A Decade Under The Influence - Live Emo & Pop Punk Karaoke Band | Ontario, Canada</title>
+  <meta name="description"
+    content="Sing until your lungs give out with A Decade Under The Influence, Ontario's live karaoke band performing your favorite emo, pop punk, and 2000s hits from bands like My Chemical Romance, Fall Out Boy, Paramore, and Blink-182.">
+  <meta name="author" content="Ryan Macdonald <hello@adecadeunderkaraoke.com>">
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="A Decade Under The Influence">
+  <meta property="og:description"
+    content="Sing until your lungs give out with A Decade Under The Influence, your live emo karaoke band.">
+  <meta property="og:image" content="img/share-image.png">
+  <meta property="og:url" content="https://adecadeunderkaraoke.com">
+  <meta name="theme-color" content="#000000">
+
+  <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="76x76" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" href="img/favicon.ico">
-  <meta name="theme-color" content="#000000">
 
+  <!-- CSS & JS -->
   <link href="normalize.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
   <script src="main.js" defer></script>
 
-  <!-- Google tag (gtag.js) -->
+  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-6G0964V0Q4"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -27,149 +40,79 @@
   </script>
 </head>
 
-<body>
+<body itemscope itemtype="https://schema.org/Organization">
+  <meta itemprop="name" content="A Decade Under The Influence">
+  <meta itemprop="description" content="Live emo and pop punk karaoke band in Ontario, Canada.">
+  <meta itemprop="url" content="https://adecadeunderkaraoke.com">
+  <meta itemprop="logo" content="img/share-image.png">
 
-  <main class="container">
-    <nav class="nav">
-      <ul class="nav-list">
-        <li class="nav-list__item"><a href="#shows">Shows</a></li>
-        <li class="nav-list__item"><a href="#songs">Songs</a></li>
-        <li class="nav-list__item"><a href="#requests">Requests</a></li>
-      </ul>
-    </nav>
-    <section>
-      <header class="header">
-        <button class="button--unstyled" id="PlayFatLip">
-          <h1 class="header-logo">Elder Emo</h1>
-          <span id="PlayFatLipContent">(click me)</span>
-        </button>
-        <h2 class="blink">Playing soon!!</h2>
-      </header>
-      <div class="card" id="requests" style="margin: 1rem auto;">
-        <h2>Contacting Elder Emo</h2>
-        <ul>
-          <li><a href="mailto:mcmahonj87@gmail.com">✉️ Send message</a></li>
-          <li><a href="#" data-bookmark>⭐️ Add to favorites</a></li>
-        </ul>
-      </div>
-      <div class="columns columns--two">
-        <div class="box--double-bordered" id="songs">
-          <div class="box--bordered card">
-            <h2>Songs</h2>
-            <ul class="song-list">
-              <li class="song-list__item">
-                <div class="media-card">
-                  <div class="media-card__media">
-                    <img src="img/songs/fat-lip.jpeg" />
-                  </div>
-                  <div class="media-card__content">
-                    <h3 class="song__title">Fat Lip</h3>
-                    <p class="song__artist">Sum 41</p>
-                  </div>
-                </div>
-              </li>
-              <li class="song-list__item">
-                <div class="media-card">
-                  <div class="media-card__media">
-                    <img src="img/songs/ocean-avenue.jpeg" />
-                  </div>
-                  <div class="media-card__content">
-                    <h3 class="song__title">Ocean Avenue</h3>
-                    <p class="song__artist">Yellowcard</p>
-                  </div>
-                </div>
-              </li>
-              <li class="song-list__item">
-                <div class="media-card">
-                  <div class="media-card__media">
-                    <img src="img/songs/a-little-less-sixteen-candles.jpeg" />
-                  </div>
-                  <div class="media-card__content">
-                    <h3 class="song__title">A Little Less Sixteen Candles</h3>
-                    <p class="song__artist">Fall Out Boy</p>
-                  </div>
-                </div>
-              </li>
-              <li class="song-list__item">
-                <div class="media-card">
-                  <div class="media-card__media">
-                    <img src="img/songs/basket-case.jpeg" />
-                  </div>
-                  <div class="media-card__content">
-                    <h3 class="song__title">Basket Case</h3>
-                    <p class="song__artist">Green Day</p>
-                  </div>
-                </div>
-              </li>
-              <li class="song-list__item">
-                <div class="media-card">
-                  <div class="media-card__media">
-                    <img src="img/songs/basket-case.jpeg" />
-                  </div>
-                  <div class="media-card__content">
-                    <h3 class="song__title">The Middle</h3>
-                    <p class="song__artist">Jimmy Eat World</p>
-                  </div>
-                </div>
-              </li>
-              <li class="song-list__item">
-                <div class="media-card">
-                  <div class="media-card__media">
-                    <img src="img/songs/jamie-all-over.jpeg" />
-                  </div>
-                  <div class="media-card__content">
-                    <h3 class="song__title">Jamie All Over</h3>
-                    <p class="song__artist">Mayday Parade</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+  <main class="page">
+    <div class="page__content">
 
-        <div class="box--double-bordered" id="shows">
-          <div class="box--bordered card">
-            <h2>Upcoming shows</h2>
-            <ul class="song-list">
-              <li class="song-list__item">
-                <div class="media-card">
-                  <div class="media-card__media">
-                    <img src="img/songs/fat-lip.jpeg" />
-                  </div>
-                  <div class="media-card__content">
-                    <h3 class="song__title">10PM - September 23, 2023</h3>
-                    <p class="song__artist">Sneaky Dee's</p>
-                    <p class="song__artist">Toronto, Canada</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+      <!-- Profile Section -->
+      <section class="profile">
+        <header class="profile__header">
+          <h1 itemprop="name">A Decade Under The Influence</h1>
+        </header>
+        <div class="profile__content" itemprop="description">
+          <p>Live Emo & Pop Punk Karaoke Band | Ontario, Canada</p>
         </div>
-      </div>
-      <div class="card" id="requests">
-        <h2>Song Requests</h2>
-        <form id="SongRequestForm">
-          <div class="form-group">
-            <label for="song_title">Song title</label>
-            <input type="text" id="song_title" name="song_title" />
-          </div>
-          <div class="form-group">
-            <label for="artist">Artist</label>
-            <input type="text" id="artist" name="artist" />
-          </div>
-          <div class="form-group">
-            <label for="name">Your name</label>
-            <input type="text" id="name" name="name" />
-          </div>
-          <div class="form-group">
-            <button class="button" type="submit">Request this song</button>
-          </div>
-        </form>
-      </div>
-    </section>
+      </section>
+
+      <!-- Upcoming Show Section -->
+      <section class="links" itemscope itemtype="https://schema.org/Event">
+        <h2>Upcoming Show</h2>
+        <meta itemprop="name" content="Live Emo Karaoke Night">
+        <meta itemprop="startDate" content="2024-12-20T20:00">
+        <meta itemprop="location" content="Ontario, Canada">
+        <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
+        <nav aria-label="Upcoming show links">
+          <ul class="links-list">
+            <li class="links-list__item">
+              <a href="#about" itemprop="url">Get tickets</a>
+            </li>
+            <li class="links-list__item">
+              <a href="#events" itemprop="url">Hear the setlist</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Learn More Section -->
+      <section class="links">
+        <h2>Learn more</h2>
+        <nav aria-label="Learn more links">
+          <ul class="links-list" itemscope itemtype="https://schema.org/CreativeWork">
+            <li class="links-list__item">
+              <a href="#about" itemprop="url">Past setlists</a>
+            </li>
+            <li class="links-list__item">
+              <a href="#events" itemprop="url">Song request</a>
+            </li>
+            <li class="links-list__item" itemscope itemtype="https://schema.org/ContactPoint">
+              <a href="#contact" itemprop="url">Contact us</a>
+              <meta itemprop="contactType" content="Customer Support">
+            </li>
+          </ul>
+        </nav>
+      </section>
+
+      <!-- Social Media Section -->
+      <section class="socials" itemscope itemtype="https://schema.org/SocialMediaPosting">
+        <h2>Social Media</h2>
+        <nav aria-label="Social media links">
+          <ul class="links-list">
+            <li class="links-list__item">
+              <a href="https://instagram.com" itemprop="url">Instagram</a>
+            </li>
+            <li class="links-list__item">
+              <a href="https://spotify.com" itemprop="url">Spotify</a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </div>
   </main>
-
 </body>
 
 </html>
