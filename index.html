@@ -25,6 +25,13 @@
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" href="img/favicon.ico">
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
   <!-- CSS & JS -->
   <link href="normalize.css" rel="stylesheet">
   <link href="main.css" rel="stylesheet">
@@ -52,20 +59,25 @@
       <!-- Profile Section -->
       <section class="profile">
         <header class="profile__header">
-          <h1 itemprop="name">A Decade Under The Influence</h1>
+          <img src="img/logo.png" width="300" alt="A Decade Under The Influence logo" />
+          <h1 class="visually-hidden" itemprop="name">A Decade Under The Influence</h1>
         </header>
         <div class="profile__content" itemprop="description">
-          <p>Live Emo & Pop Punk Karaoke Band | Ontario, Canada</p>
+          <p class="logo-tag">Live Emo & Pop Punk Karaoke Band | Ontario, Canada</p>
         </div>
       </section>
 
       <!-- Upcoming Show Section -->
-      <section class="links" itemscope itemtype="https://schema.org/Event">
-        <h2>Upcoming Show</h2>
+      <section class="link-tree" itemscope itemtype="https://schema.org/Event">
+        <header>
+          <h2 class="link-tree__header">Upcoming Show</h2>
+        </header>
+
         <meta itemprop="name" content="Live Emo Karaoke Night">
         <meta itemprop="startDate" content="2024-12-20T20:00">
         <meta itemprop="location" content="Ontario, Canada">
         <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
+
         <nav aria-label="Upcoming show links">
           <ul class="links-list">
             <li class="links-list__item">
@@ -79,7 +91,7 @@
       </section>
 
       <!-- Learn More Section -->
-      <section class="links">
+      <section class="link-tree">
         <h2>Learn more</h2>
         <nav aria-label="Learn more links">
           <ul class="links-list" itemscope itemtype="https://schema.org/CreativeWork">
@@ -99,13 +111,13 @@
 
       <!-- Social Media Section -->
       <section class="socials" itemscope itemtype="https://schema.org/SocialMediaPosting">
-        <h2>Social Media</h2>
+        <h2 class="visually-hidden">Social Media</h2>
         <nav aria-label="Social media links">
-          <ul class="links-list">
-            <li class="links-list__item">
+          <ul class="socials-list">
+            <li class="socials-list__item">
               <a href="https://instagram.com" itemprop="url">Instagram</a>
             </li>
-            <li class="links-list__item">
+            <li class="socials-list__item">
               <a href="https://spotify.com" itemprop="url">Spotify</a>
             </li>
           </ul>
