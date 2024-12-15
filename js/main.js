@@ -11,6 +11,18 @@
     el.addEventListener('touchend', resetLinksListItemBoxShadow);
   });
 
+  function randomizeLinksListItemBoxShadow(event) {
+    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
+      Math.random() * 256,
+    )}, ${Math.floor(Math.random() * 256)})`;
+
+    event.currentTarget.style.boxShadow = `${randomColor} 10px 10px 0px 0px`;
+  }
+
+  function resetLinksListItemBoxShadow(event) {
+    event.currentTarget.style.boxShadow = '';
+  }
+
   // Modals
   MicroModal.init();
 
@@ -111,17 +123,4 @@
       ctx.clearRect(0, 0, canvas.width, canvas.height);
     }
   });
-
-  // Functions
-  function randomizeLinksListItemBoxShadow(event) {
-    const randomColor = `rgb(${Math.floor(Math.random() * 256)}, ${Math.floor(
-      Math.random() * 256,
-    )}, ${Math.floor(Math.random() * 256)})`;
-
-    event.currentTarget.style.boxShadow = `${randomColor} 10px 10px 0px 0px`;
-  }
-
-  function resetLinksListItemBoxShadow(event) {
-    event.currentTarget.style.boxShadow = '';
-  }
 })();
