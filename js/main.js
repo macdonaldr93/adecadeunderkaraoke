@@ -16,15 +16,24 @@
 
   // Doodle
   let doodleEnabled = false;
+  let audio = null;
   const doodleBtn = document.getElementById('DoodleToggle');
   const canvas = document.getElementById('Doodle');
   doodleBtn.addEventListener('click', event => {
     event.preventDefault();
     doodleEnabled = !doodleEnabled;
+
+    if (!audio) {
+      audio = new Audio('music/fat-lip.mp3');
+      audio.volume = 0.5;
+    }
+
     if (doodleEnabled) {
+      audio.play();
       canvas.style.zIndex = 0;
       doodleBtn.innerText = 'Turn off doodle mode';
     } else {
+      audio.pause();
       canvas.style.zIndex = -1;
       doodleBtn.innerText = 'Turn on doodle mode';
     }
