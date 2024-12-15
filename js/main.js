@@ -17,18 +17,20 @@
   // Doodle
   let doodleEnabled = false;
   const doodleBtn = document.getElementById('DoodleToggle');
+  const canvas = document.getElementById('Doodle');
   doodleBtn.addEventListener('click', event => {
     event.preventDefault();
     doodleEnabled = !doodleEnabled;
     if (doodleEnabled) {
+      canvas.style.zIndex = 0;
       doodleBtn.innerText = 'Turn off doodle mode';
     } else {
+      canvas.style.zIndex = -1;
       doodleBtn.innerText = 'Turn on doodle mode';
     }
   });
-  const canvas = document.getElementById('Doodle');
-  const ctx = canvas.getContext('2d');
 
+  const ctx = canvas.getContext('2d');
   function resizeCanvas() {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
