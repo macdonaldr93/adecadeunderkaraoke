@@ -53,8 +53,27 @@
 
   const ctx = canvas.getContext('2d');
   function resizeCanvas() {
+    const tempCanvas = document.createElement('canvas');
+    const tempContext = tempCanvas.getContext('2d');
+    tempCanvas.width = canvas.width;
+    tempCanvas.height = canvas.height;
+    tempContext.drawImage(canvas, 0, 0);
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+    const ctx = canvas.getContext('2d');
+    ctx.drawImage(
+      tempCanvas,
+      0,
+      0,
+      tempCanvas.width,
+      tempCanvas.height,
+      0,
+      0,
+      canvas.width,
+      canvas.height,
+    );
   }
   resizeCanvas();
   window.addEventListener('resize', resizeCanvas);
