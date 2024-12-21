@@ -82,8 +82,9 @@
         <!-- Current Setlist Section -->
         <section class="link-tree">
           <h2 class="visually-hidden">Current Setlist</h2>
-          <div class="links-list__item links-list__item--primary">
-            <a href="https://open.spotify.com/playlist/6aNCsKFLJGc7ByNxc5ISQD?si=de5a1e14b6144f86&utm_source=aduti-homepage&utm_medium=referral"
+          <div>
+            <a class="links-list__item links-list__item--primary"
+              href="https://open.spotify.com/playlist/6aNCsKFLJGc7ByNxc5ISQD?si=de5a1e14b6144f86&utm_source=aduti-homepage&utm_medium=referral"
               itemprop="url">
               <span class="links-list__link-text">Listen to our setlist</span>
               <img class="links-list__link-icon" src="img/play-button.png" width="24" height="24" role="presentation" />
@@ -94,10 +95,9 @@
         <!-- Upcoming Show Section -->
         <section class="link-tree" id="upcoming">
           <h2 class="link-tree__header visually-hidden">Upcoming Shows</h2>
-          <nav aria-label="Upcoming show links">
+          <!-- <nav aria-label="Upcoming show links">
             <ul class="links-list">
-              <!-- Nov 29: Sneaky Dee's, Toronto Section -->
-              <li class="links-list__item" itemscope itemtype="https://schema.org/Event">
+              <li itemscope itemtype="https://schema.org/Event">
                 <meta itemprop="name" content="Live Emo Karaoke Night">
                 <meta itemprop="startDate" content="2024-11-29T20:00">
                 <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
@@ -111,35 +111,15 @@
                     <meta itemprop="addressCountry" content="Canada">
                   </div>
                 </div>
-                <a href="https://www.tixr.com/groups/sonicunyon/events/a-decade-under-the-influence-120678?utm_source=aduti-homepage&utm_medium=referral&utm_campaign=ticket-sales"
+                <a class="links-list__item"
+                  href="https://www.tixr.com/groups/sonicunyon/events/a-decade-under-the-influence-120678?utm_source=aduti-homepage&utm_medium=referral&utm_campaign=ticket-sales"
                   itemprop="url" title="Get tickets for the Nov 29th show">
                   <span class="links-list__link-text">Nov 29: Sneaky Dee's, Toronto</span>
                   <img class="links-list__link-icon" src="img/ticket.png" width="24" height="24" role="presentation" />
                 </a>
               </li>
-              <!-- Dec 6: Mill's Hardware, Hamilton Section -->
-              <li class="links-list__item" itemscope itemtype="https://schema.org/Event">
-                <meta itemprop="name" content="Live Emo Karaoke Night">
-                <meta itemprop="startDate" content="2024-12-20T20:00">
-                <meta itemprop="eventStatus" content="https://schema.org/EventScheduled">
-                <div itemprop="location" itemscope itemtype="https://schema.org/Place">
-                  <meta itemprop="name" content="Mill's Hardware">
-                  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-                    <meta itemprop="streetAddress" content="95 King St E">
-                    <meta itemprop="addressLocality" content="Hamilton">
-                    <meta itemprop="addressRegion" content="Ontario">
-                    <meta itemprop="postalCode" content="L8N 1A9">
-                    <meta itemprop="addressCountry" content="Canada">
-                  </div>
-                </div>
-                <a href="https://www.tixr.com/groups/sonicunyon/events/a-decade-under-the-influence-120678?utm_source=aduti-homepage&utm_medium=referral&utm_campaign=ticket-sales"
-                  itemprop="url" title="Get tickets for the Dec 6th show">
-                  <span class="links-list__link-text">Dec 6: Mill's Hardware, Hamilton</span>
-                  <img class="links-list__link-icon" src="img/ticket.png" width="24" height="24" role="presentation" />
-                </a>
-              </li>
             </ul>
-          </nav>
+          </nav> -->
         </section>
 
         <!-- Learn More Section -->
@@ -147,13 +127,13 @@
           <h2>Stay Connected</h2>
           <nav aria-label="Learn more links">
             <ul class="links-list">
-              <li class="links-list__item">
-                <button data-micromodal-trigger="PastSetlists" aria-label="View past setlists">
+              <li>
+                <button class="links-list__item" data-micromodal-trigger="PastSetlists" aria-label="View past setlists">
                   Past setlists
                 </button>
               </li>
-              <li class="links-list__item">
-                <a
+              <li>
+                <a class="links-list__item"
                   href="https://docs.google.com/forms/d/e/1FAIpQLSfZGp4LtSB2e3wjGdzW1RUxrg1-wUcI1BoxSg-SOiMf8NibmQ/viewform?usp=header&utm_source=aduti-homepage&utm_medium=referral">
                   Song request</a>
               </li>
@@ -167,11 +147,11 @@
         <h2 class="visually-hidden">Social Media</h2>
         <nav aria-label="Social media links">
           <ul class="socials-list">
-            <li class="socials-list__item" itemscope itemtype="https://schema.org/ContactPoint">
+            <li itemscope itemtype="https://schema.org/ContactPoint">
               <meta itemprop="contactType" content="Booking">
               <meta itemprop="areaServed" content="North America">
               <meta itemprop="availableLanguage" content="English">
-              <a href="mailto:hello@adecadeunderkaraoke.com" itemprop="email">
+              <a class="socials-list__item" href="mailto:hello@adecadeunderkaraoke.com" itemprop="email">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" aria-hidden="true"
                   focusable="false">
                   <path
@@ -180,8 +160,9 @@
                 <span class="visually-hidden">Email us</span>
               </a>
             </li>
-            <li class="socials-list__item" itemscope itemtype="https://schema.org/SocialMediaPosting">
-              <a href="https://www.instagram.com/adecadeunderkaraoke?utm_source=website&utm_medium=social&utm_campaign=social_links"
+            <li itemscope itemtype="https://schema.org/SocialMediaPosting">
+              <a class="socials-list__item"
+                href="https://www.instagram.com/adecadeunderkaraoke?utm_source=website&utm_medium=social&utm_campaign=social_links"
                 itemprop="url">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32" height="32" aria-hidden="true"
                   focusable="false">
@@ -191,8 +172,8 @@
                 <span class="visually-hidden">Visit Instagram profile</span>
               </a>
             </li>
-            <li class="socials-list__item">
-              <a
+            <li>
+              <a class="socials-list__item"
                 href="https://open.spotify.com/user/31gakaavyjuu3ucu7qee5ihpfalu?si=dd15f4f7036e4946?utm_source=website&utm_medium=social&utm_campaign=social_links">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="32" height="32" aria-hidden="true"
                   focusable="false">

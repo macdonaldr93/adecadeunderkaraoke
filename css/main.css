@@ -171,8 +171,7 @@ button:focus-visible {
   padding: 0;
 }
 
-.links-list__item>a,
-.links-list__item>button {
+.links-list__item {
   -ms-flex-positive: 1;
   -webkit-box-flex: 1;
   -webkit-box-shadow: var(--c-overlay) 8px 8px 0px 0px;
@@ -206,15 +205,14 @@ button:focus-visible {
   width: 100%;
 }
 
-.links-list__item--primary>a,
-.links-list__item--primary>button {
+.links-list__item--primary,
+.links-list__item--primary {
   border: 2px solid var(--c-primary);
   -webkit-box-shadow: var(--c-primary) 8px 8px 0px 0px;
   box-shadow: var(--c-primary) 8px 8px 0px 0px;
 }
 
-.links-list__item>a:hover,
-.links-list__item>button:hover {
+.links-list__item:hover {
   -webkit-transform: rotate(1deg) translateZ(0);
   transform: rotate(1deg) translateZ(0);
 }
@@ -252,11 +250,6 @@ button:focus-visible {
 }
 
 .socials-list__item {
-  padding: 0;
-  margin: 0;
-}
-
-.socials-list__item a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -266,11 +259,11 @@ button:focus-visible {
   color: inherit;
 }
 
-.socials-list__item a:focus-visible {
+.socials-list__item:focus-visible {
   border-radius: 8px;
 }
 
-.socials-list__item a::after {
+.socials-list__item::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -282,7 +275,7 @@ button:focus-visible {
   transition: width 0.3s ease-in-out;
 }
 
-.socials-list__item a:hover::after {
+.socials-list__item:hover::after {
   width: 100%;
 }
 
